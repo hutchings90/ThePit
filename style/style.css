@@ -1,0 +1,157 @@
+body{
+	text-align: center;
+}
+
+.row{
+	display: block;
+	width: 100%;
+}
+
+.col{
+	display: inline-block;
+}
+
+.menu{
+	text-align: center;
+}
+
+.battle-scene{
+	width: 750px;
+}
+
+.player-battle-scene-container{
+	height: 500px;
+	width: 50%;
+	position: relative;
+}
+
+.player-battle-scene{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.player-battle-field-1{
+	text-align: left;
+	display: relative;
+}
+
+.player-battle-field-2{
+	text-align: right;
+	display: relative;
+}
+
+.player-battle-image{
+	width: 50%;
+}
+
+.player-battle-field-2 *{
+	transform: scaleX(-1);
+}
+
+.player-1-battle-health-container{
+	background-color: red;
+	border: 1px solid black;
+	text-align: right;
+}
+
+.player-2-battle-health-container{
+	background-color: red;
+	border: 1px solid black;
+	text-align: left;
+}
+
+.player-battle-health-bar{
+	background-color: green;
+}
+
+.player-battle-health-numbers{
+	padding: 0px 10px;
+}
+
+@keyframes get-hit-1{
+	50% {
+		margin-bottom: 50px;
+	}
+	100% {
+		margin-left: -125px;
+		margin-bottom: 0;
+	}
+}
+
+@keyframes get-hit-2{
+	50% {
+		margin-bottom: 50px;
+	}
+	100% {
+		margin-left: 125px;
+		margin-bottom: 0;
+	}
+}
+
+.get-hit-1{
+	animation: get-hit-1 .25s linear forwards;
+}
+
+.get-hit-2{
+	animation: get-hit-2 .25s linear forwards;
+}
+
+@keyframes jump-kick-attack-1{
+	50% {
+		margin-bottom: 250px;
+	}
+	100% {
+		margin-bottom: 50px;
+		margin-left: 500px;
+	}
+}
+
+@keyframes jump-kick-attack-2{
+	50% {
+		margin-bottom: 250px;
+	}
+	100% {
+		margin-bottom: 50px;
+		margin-left: -500px;
+	}
+}
+
+.jump-kick-attack-1{
+	animation: jump-kick-attack-1 .5s linear forwards;
+}
+
+.jump-kick-attack-2{
+	animation: jump-kick-attack-2 .5s linear forwards;
+}
+
+@keyframes force-shot-1{
+	50% {
+		margin-bottom: 250px;
+	}
+	100% {
+		margin-bottom: 50px;
+		margin-left: 500px;
+	}
+}
+
+@keyframes force-shot-2{
+	50% {
+		margin-bottom: 250px;
+	}
+	100% {
+		margin-bottom: 50px;
+		margin-left: -500px;
+	}
+}
+
+.force-shot-1{
+	position: absolute;
+	animation: force-shot-1 .75s linear forwards;
+}
+
+.force-shot-2{
+	position: absolute;
+	animation: force-shot-2 .75s linear forwards;
+}
